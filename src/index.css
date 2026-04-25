@@ -1,0 +1,113 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 16%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 16%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 16%;
+
+    /* Zerodha blue */
+    --primary: 211 100% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 210 16% 96%;
+    --secondary-foreground: 0 0% 16%;
+
+    --muted: 210 16% 97%;
+    --muted-foreground: 0 0% 40%;
+
+    --accent: 211 100% 96%;
+    --accent-foreground: 211 100% 30%;
+
+    --destructive: 0 73% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 90%;
+    --input: 0 0% 90%;
+    --ring: 211 100% 50%;
+
+    --radius: 0.25rem;
+
+    /* Zerodha specifics */
+    --zerodha-blue: 211 100% 50%;
+    --zerodha-blue-dark: 211 100% 42%;
+    --zerodha-text: 0 0% 16%;
+    --zerodha-muted: 0 0% 40%;
+    --zerodha-footer-bg: 210 17% 98%;
+    --zerodha-red: 0 73% 50%;
+    --zerodha-green: 145 63% 42%;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 0 0% 8%;
+    --foreground: 0 0% 95%;
+    --card: 0 0% 10%;
+    --card-foreground: 0 0% 95%;
+    --popover: 0 0% 10%;
+    --popover-foreground: 0 0% 95%;
+    --primary: 211 100% 55%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 0% 14%;
+    --secondary-foreground: 0 0% 95%;
+    --muted: 0 0% 14%;
+    --muted-foreground: 0 0% 65%;
+    --accent: 211 50% 18%;
+    --accent-foreground: 211 100% 80%;
+    --destructive: 0 73% 50%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 0 0% 18%;
+    --input: 0 0% 18%;
+    --ring: 211 100% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-normal text-foreground;
+    letter-spacing: -0.01em;
+  }
+}
+
+@layer components {
+  .btn-zerodha {
+    @apply inline-flex items-center justify-center rounded-[3px] bg-primary px-7 py-3 text-base font-medium text-primary-foreground transition-colors hover:bg-[hsl(var(--zerodha-blue-dark))];
+  }
+
+  .btn-zerodha-outline {
+    @apply inline-flex items-center justify-center rounded-[3px] border border-primary px-7 py-3 text-base font-medium text-primary transition-colors hover:bg-accent;
+  }
+
+  .container-zerodha {
+    @apply mx-auto w-full max-w-6xl px-4 md:px-6;
+  }
+}
