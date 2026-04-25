@@ -10,6 +10,7 @@ import About from "./pages/About.tsx";
 import Products from "./pages/Products.tsx";
 import Pricing from "./pages/Pricing.tsx";
 import Support from "./pages/Support.tsx";
+import FeatureUnderDevelopment from "./pages/FeatureUnderDevelopment.tsx";
 
 const queryClient = new QueryClient();
 
@@ -26,6 +27,7 @@ const App = () => (
           <Route path="/products" element={<Products />} />
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/support" element={<Support />} />
+          <Route path="/feature-under-development" element={<FeatureUnderDevelopment />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

@@ -1,6 +1,7 @@
 import { Navbar } from "@/components/landing/Navbar";
 import { Footer } from "@/components/landing/Footer";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { CheckCircle2 } from "lucide-react";
 
 const docs = [
@@ -22,6 +23,7 @@ const steps = [
 
 const Signup = () => {
   const [phone, setPhone] = useState("");
+  const navigate = useNavigate();
 
   return (
     <div className="min-h-screen bg-background">
@@ -62,7 +64,10 @@ const Signup = () => {
             </div>
 
             <form
-              onSubmit={(e) => e.preventDefault()}
+              onSubmit={(e) => {
+                e.preventDefault();
+                navigate("/feature-under-development");
+              }}
               className="rounded-md border border-border bg-card p-6 shadow-sm md:p-8"
             >
               <h2 className="mb-2 text-2xl font-normal">Signup now</h2>
