@@ -2,146 +2,39 @@
 
 A modern Zerodha-style trading platform landing project built with React, TypeScript, and Vite.
 
-This project is created and maintained by **Henil Dilipbhai Talaviya**.
+## Project Details
 
-## Project Overview
+This project recreates a Zerodha-inspired web experience with clean UI, reusable components, and responsive layouts.
 
-This application recreates a Zerodha-inspired product website experience with:
+### Main Features
 
-- Modern responsive UI and reusable components
-- Product, pricing, support, and signup pages
-- Structured component-based architecture
-- Clean and scalable frontend codebase
+- Responsive landing page and navigation
+- Hero, trust, platform, ecosystem, pricing, and CTA sections
+- Dedicated pages for products, pricing, support, signup, and about
+- Reusable UI components with consistent design system
+- Fast frontend build setup using Vite
 
-## Author
+### Tech Stack
 
-- **Name:** Henil Dilipbhai Talaviya
-- **Date of birth:** 22/09/2003
-- **Place of birth:** Talala, Gujarat, India
-- **Nationality:** Indian
-- **Gender:** Male
-- **Phone:** (+91) 9875162590
-- **Email:** heniltalaviya2003@gmail.com
-- **WhatsApp:** https://wa.me/919875162590
-- **Address:** B-6, Nishant Bunglows, Behind ramaji temple, Nikol, Ahmedabad, 382350, Ahmedabad, India
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- React Router
 
-## Professional Summary
-
-Dedicated Computer Engineering graduate with practical experience in full-stack development and core computing concepts, along with foundational knowledge of Python for data analysis. Skilled in building scalable applications, analyzing data, and working with databases using Angular, Core Java, MySQL, and NoSQL. Strong foundation in algorithms, mathematics, and problem-solving, with experience developing projects such as an order and billing system, Zerodha clone, Car Rental System, and Hospital Management System, and the ability to collaborate in teams to deliver efficient, data-driven solutions.
-
-## Work Experience
-
-### Full-Stack Developer - MSQUARE INFOTECH
-
-- **Duration:** 02/06/2025 - 20/03/2026
-- **Location:** Surat, India
-- **Email:** info@msquareinfotech.com
-- **Website:** https://msquareinfotech.com
-
-Key responsibilities:
-
-- Developed responsive frontend applications using Angular for dynamic user interfaces.
-- Implemented backend services using Core Java and Spring Boot with modular architecture.
-- Designed and developed REST APIs and backend logic for order processing and billing workflows.
-- Structured APIs using MVC architecture for maintainability.
-- Integrated Angular frontend with backend APIs and validated API key/response flows.
-- Tested APIs using Postman and browser developer tools.
-- Built UI improvements using Angular, HTML, CSS, and Bootstrap.
-- Documented API structures, backend workflows, and project architecture.
-
-### Web Developer Intern - MINDSTORMSOFT
-
-- **Duration:** 20/01/2025 - 21/04/2025
-- **Location:** Ahmedabad, India
-- **Email:** info@mindstormsoft.com
-- **Website:** www.mindstormsoft.com
-
-Key responsibilities:
-
-- Trained in frontend development with JavaScript and React.
-- Developed a Zerodha clone as a final-year project.
-- Tested API requests and responses using Postman and browser developer tools.
-- Learned REST API workflows and data handling basics.
-- Gained foundational knowledge of Python and Pandas for data analysis.
-- Collaborated with team members on real-world project development.
-
-## Education
-
-### Bachelor of Engineering in Computer Engineering
-
-- **Institute:** Gandhinagar Institute of Technology, Gandhinagar (GTU)
-- **Duration:** 02/08/2021 - 25/05/2025
-- **Final Grade:** 8.27 CGPA
-- **Address:** Khatraj-Kalol Road, Moti Bhoyan, Gandhinagar, 382721, India
-- **Website:** https://gandhinagaruni.ac.in/
-
-### Higher Secondary Education (GSHSEB)
-
-- **School:** Divine Life School
-- **Duration:** 04/06/2019 - 17/05/2021
-- **Final Grade:** 78.3
-- **Main Subjects:** Mathematics, Physics, Chemistry, Computer, English
-- **Address:** Nava Naroda Char Rasta, Kathwada Road, Beside Swaminarayan Temple, Ahmedabad, Gujarat, 382330, India
-- **Website:** https://divinelifeinternationalschoolnaroda.in/
-
-## Languages
-
-- **Mother tongue:** Gujarati
-- **English:** Listening (C1), Reading (B2), Spoken Production (B2), Spoken Interaction (B2), Writing (B2)
-
-## Technical Skills
-
-- **Programming Languages:** Java, JavaScript, Python (Basic)
-- **Frontend:** Angular, React, HTML, CSS, Bootstrap
-- **Backend:** Core Java, Spring Boot, REST API Development
-- **Database:** MongoDB (NoSQL), MySQL
-- **Core Concepts:** MVC Architecture, API Integration, OOP, Data Structures
-- **Tools:** Postman, Git, Eclipse, VS Code
-- **Libraries/Technologies:** Pandas (Basic), JSON, REST Services
-
-## Projects
-
-### Hospital Management System
-
-- Developed using Core Java and SQL to automate healthcare workflows.
-- Implemented modules for patient records, doctor listing, and appointment booking.
-- Applied OOP concepts and database connectivity.
-
-### Car Rental Service System
-
-- Developed a platform for listing second-hand vehicles in good condition.
-- Implemented filtering by fuel type, category, budget, and vehicle age.
-- Built query-driven retrieval and backend connectivity using MySQL and JDBC.
-
-### Expense Management System
-
-- Developed daily expense tracking features: add, edit, and delete.
-- Built responsive user interface with React, HTML, CSS, and Bootstrap.
-
-## Soft Skills
-
-- Effective communication and team collaboration
-- Ability to explain technical concepts clearly
-- Interpersonal and teamwork skills
-- Presentation and documentation skills
-
-## Organizational Skills
-
-- Time management and task prioritization
-- Project planning and coordination
-- Adaptability and quick learning
-- Problem-solving and analytical thinking
-- Ability to work in agile and structured workflows
-
-## Local Development
+### Getting Started
 
 ```bash
 npm install
 npm run dev
 ```
 
-## Build
+### Build for Production
 
 ```bash
 npm run build
 ```
+
+## Author
+
+**Henil Talaviya**
