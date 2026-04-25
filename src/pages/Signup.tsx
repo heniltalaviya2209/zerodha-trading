@@ -30,6 +30,14 @@ const Signup = () => {
         <section className="py-16 md:py-24">
           <div className="container-zerodha grid items-center gap-12 md:grid-cols-2">
             <div>
+              <img
+                src="/media/images/signup.png"
+                alt="Zerodha signup"
+                width={720}
+                height={450}
+                loading="lazy"
+                className="mb-8 w-full max-w-xl rounded-md border border-border"
+              />
               <h1 className="mb-4 text-3xl font-normal md:text-5xl">
                 Open a free demat &amp; trading account online
               </h1>

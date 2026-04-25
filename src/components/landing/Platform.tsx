@@ -1,11 +1,9 @@
-import platform from "@/assets/platform.jpg";
-
 export const Platform = () => {
   return (
     <section className="py-16 md:py-24">
       <div className="container-zerodha grid items-center gap-12 md:grid-cols-2">
         <img
-          src={platform}
+          src="/media/images/kite.png"
           alt="Zerodha Kite trading platform"
           width={1024}
           height={768}

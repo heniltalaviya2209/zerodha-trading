@@ -3,15 +3,6 @@ import { Footer } from "@/components/landing/Footer";
 import { PageHeader } from "@/components/landing/PageHeader";
 import { Link } from "react-router-dom";
 import {
-  LineChart,
-  Code2,
-  BellRing,
-  LayoutDashboard,
-  Coins,
-  Layers,
-  GraduationCap,
-  Smartphone,
-  MessagesSquare,
   ArrowRight,
   Shield,
   Zap,
@@ -22,21 +13,21 @@ import {
 const trading = [
   {
     name: "Kite",
-    icon: LineChart,
+    image: "/media/images/kite.png",
     desc: "Sleek, fast, and modern flagship trading platform on web and mobile. Trade equity, F&O, currencies and commodities seamlessly.",
     tags: ["Android", "iOS", "Web"],
     highlight: "1.6 Cr+ users",
   },
   {
     name: "Kite Connect API",
-    icon: Code2,
+    image: "/media/images/kiteconnect.png",
     desc: "Build powerful trading platforms and bespoke experiences with our HTTP and WebSocket APIs. Trusted by 1000+ developers.",
     tags: ["HTTP", "WebSocket"],
     highlight: "Developer-first",
   },
   {
     name: "Sentinel",
-    icon: BellRing,
+    image: "/media/images/intradayTrades.svg",
     desc: "Create real-time market alerts on the cloud across asset classes — no programming required. Never miss a setup again.",
     tags: ["Web"],
     highlight: "Real-time",
@@ -46,21 +37,21 @@ const trading = [
 const investment = [
   {
     name: "Console",
-    icon: LayoutDashboard,
+    image: "/media/images/console.png",
     desc: "The central dashboard for your account. Detailed P&L reports, tax statements, holdings analytics and family overviews.",
     tags: ["Web"],
     highlight: "Analytics",
   },
   {
     name: "Coin",
-    icon: Coins,
+    image: "/media/images/coin.png",
     desc: "Buy direct mutual funds online — commission-free, delivered straight to your demat account. SIPs and lump sums made simple.",
     tags: ["Android", "iOS", "Web"],
     highlight: "₹0 commission",
   },
   {
     name: "Smallcase",
-    icon: Layers,
+    image: "/media/images/smallcaseLogo.png",
     desc: "Invest in baskets of stocks built around themes and ideas, professionally curated by SEBI-registered managers.",
     tags: ["Partner"],
     highlight: "Theme-based",
@@ -70,21 +61,21 @@ const investment = [
 const learning = [
   {
     name: "Varsity",
-    icon: GraduationCap,
+    image: "/media/images/varsity.png",
     desc: "An easy-to-grasp collection of stock market lessons with in-depth coverage and rich illustrations. Free, forever.",
     tags: ["Web"],
     highlight: "200+ chapters",
   },
   {
     name: "Varsity Mobile",
-    icon: Smartphone,
+    image: "/media/images/education.svg",
     desc: "Bite-sized lessons for stock market education on the go. Learn during your commute, in 5 minutes a day.",
     tags: ["Android", "iOS"],
     highlight: "Bite-sized",
   },
   {
     name: "TradingQ&A",
-    icon: MessagesSquare,
+    image: "/media/images/intradayTrades.svg",
     desc: "The most active stock market discussion forum in India. Ask, learn and share with a community of 5L+ traders.",
     tags: ["Web"],
     highlight: "5L+ members",
@@ -92,12 +83,12 @@ const learning = [
 ];
 
 const partners = [
-  { name: "Streak", desc: "Algo trading without code" },
-  { name: "Smallcase", desc: "Theme-based investing" },
-  { name: "GoldenPi", desc: "Online bonds platform" },
-  { name: "Ditto", desc: "Personalised insurance advice" },
-  { name: "Tijori", desc: "Stock research data" },
-  { name: "LearnApp", desc: "Learn from market experts" },
+  { name: "Streak", desc: "Algo trading without code", image: "/media/images/streakLogo.png" },
+  { name: "Smallcase", desc: "Theme-based investing", image: "/media/images/smallcaseLogo.png" },
+  { name: "GoldenPi", desc: "Online bonds platform", image: "/media/images/goldenpiLogo.png" },
+  { name: "Ditto", desc: "Personalised insurance advice", image: "/media/images/dittoLogo.png" },
+  { name: "Sensibull", desc: "Advanced options platform", image: "/media/images/sensibullLogo.svg" },
+  { name: "Zerodha Fund House", desc: "Mutual fund products", image: "/media/images/zerodhaFundhouse.png" },
 ];
 
 const why = [
@@ -109,9 +100,14 @@ const why = [
 
 const ProductCard = ({ p }: { p: (typeof trading)[number] }) => (
   <div className="group flex h-full flex-col rounded-lg border border-border bg-card p-6 transition-all hover:-translate-y-1 hover:border-primary/40 hover:shadow-lg">
-    <div className="mb-4 flex h-11 w-11 items-center justify-center rounded-md bg-accent text-primary">
-      <p.icon className="h-5 w-5" />
-    </div>
+    <img
+      src={p.image}
+      alt={p.name}
+      width={56}
+      height={56}
+      loading="lazy"
+      className="mb-4 h-11 w-11 rounded-md object-contain"
+    />
     <div className="mb-2 flex items-center gap-2">
       <h3 className="text-xl font-medium text-foreground">{p.name}</h3>
       <span className="rounded-full bg-[hsl(var(--zerodha-footer-bg))] px-2 py-0.5 text-[11px] font-medium text-muted-foreground">
@@ -211,7 +207,17 @@ const Products = () => {
                   className="group rounded-lg border border-border bg-card p-5 transition-colors hover:border-primary/40"
                 >
                   <div className="mb-1 flex items-center justify-between">
-                    <span className="font-medium text-foreground">{p.name}</span>
+                    <div className="flex items-center gap-2">
+                      <img
+                        src={p.image}
+                        alt={p.name}
+                        width={80}
+                        height={26}
+                        loading="lazy"
+                        className="h-6 w-auto object-contain"
+                      />
+                      <span className="font-medium text-foreground">{p.name}</span>
+                    </div>
                     <ArrowRight className="h-4 w-4 text-muted-foreground transition-transform group-hover:translate-x-1 group-hover:text-primary" />
                   </div>
                   <p className="text-sm text-muted-foreground">{p.desc}</p>

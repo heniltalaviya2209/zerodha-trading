@@ -1,5 +1,3 @@
-import ecosystem from "@/assets/ecosystem.jpg";
-
 const products = ["Console", "Coin", "Kite Connect", "Varsity", "Trading Q&A"];
 
 export const Ecosystem = () => {
@@ -20,7 +18,7 @@ export const Ecosystem = () => {
           </div>
         </div>
         <img
-          src={ecosystem}
+          src="/media/images/ecosystem.png"
           alt="Zerodha ecosystem"
           width={1024}
           height={768}

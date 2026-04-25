@@ -16,10 +16,13 @@ export const Navbar = () => {
     <header className="sticky top-0 z-50 w-full border-b border-border bg-background/95 backdrop-blur">
       <div className="container-zerodha flex h-16 items-center justify-between">
         <Link to="/" className="flex items-center gap-2">
-          <div className="flex h-7 w-7 items-center justify-center rounded-full bg-primary text-primary-foreground">
-            <span className="text-sm font-bold">Z</span>
-          </div>
-          <span className="text-xl font-light tracking-wide text-foreground">Zerodha</span>
+          <img
+            src="/media/images/logo.svg"
+            alt="Zerodha"
+            width={128}
+            height={28}
+            className="h-5 w-auto"
+          />
         </Link>
 
         <nav className="hidden items-center gap-8 md:flex">

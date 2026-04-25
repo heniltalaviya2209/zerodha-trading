@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { ArrowRight, ShieldCheck, TrendingUp, Users, Sparkles } from "lucide-react";
-import heroImg from "@/assets/hero-illustration.jpg";
 
 export const Hero = () => {
   return (
@@ -101,7 +100,7 @@ export const Hero = () => {
               <div className="absolute inset-0 -z-10 rounded-3xl bg-gradient-to-tr from-primary/20 via-accent to-transparent blur-2xl" />
 
               <img
-                src={heroImg}
+                src="/media/images/homeHero.png"
                 alt="Person trading on laptop with charts"
                 width={1280}
                 height={960}
